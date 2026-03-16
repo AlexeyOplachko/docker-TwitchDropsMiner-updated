@@ -31,7 +31,7 @@ RUN \
   set-cont-env APP_NAME "Twitch Drops Miner" && \
   set-cont-env APP_VERSION "${TDM_VERSION_TAG}" && \
   install_app_icon.sh "$APP_ICON_URL" && \
-  wget -P /tmp/ https://github.com/Windows200000/TwitchDropsMiner-updated/releases/download/v${TDM_VERSION_TAG}/Twitch.Drops.Miner.Linux.PyInstaller.zip && \
+  wget -P /tmp/ https://github.com/DevilXD/TwitchDropsMiner/releases/download/dev-build/Twitch.Drops.Miner.Linux.PyInstaller-x86_64.zip && \
   mkdir /app && \
   unzip -p /tmp/Twitch.Drops.Miner.Linux.PyInstaller.zip "Twitch Drops Miner/Twitch Drops Miner (by DevilXD)" > /app/TwitchDropsMiner && \
   chmod +x /app/TwitchDropsMiner && \
