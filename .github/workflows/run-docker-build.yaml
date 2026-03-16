@@ -51,4 +51,4 @@ jobs:
       docker_username: ${{ secrets.DOCKER_USERNAME }}
       docker_password: ${{ secrets.DOCKER_PASSWORD }}
       gh_username: ${{ secrets.GH_USERNAME }}
-      gh_token: ${{ secrets.PACKAGES_TOKEN }}
+      gh_token: ${{ secrets.GITHUB_TOKEN }}
