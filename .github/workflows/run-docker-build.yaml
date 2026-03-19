@@ -11,7 +11,7 @@ on:
       - ".github/workflows/run-docker-build.yaml"
 
 env:
-  ORG_ACCOUNT: "zaggash"
+  ORG_ACCOUNT: "AlexeyOplachko"
   IMAGE_NAME: "twitchdropsminer-updated"
   CONTEXT: "./"
   DOCKERFILE: "./Dockerfile"
@@ -39,7 +39,7 @@ jobs:
   build-push:
     name: Build & Push
     needs: extract-tag
-    uses: zaggash/gh-workflows/.github/workflows/action_docker-build-repo.yaml@main
+    uses: AlexeyOplachko/gh-workflows/.github/workflows/action_docker-build-repo.yaml@main
     with:
       github-account: ${{ needs.extract-tag.outputs.org-account }}
       dockerhub-account: ${{ needs.extract-tag.outputs.org-account }}
