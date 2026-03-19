@@ -39,7 +39,7 @@ jobs:
   build-push:
     name: Build & Push
     needs: extract-tag
-    uses: AlexeyOplachko/gh-workflows/.github/workflows/action_docker-build-repo.yaml@main
+    uses: zaggash/gh-workflows/.github/workflows/action_docker-build-repo.yaml@main
     with:
       github-account: ${{ needs.extract-tag.outputs.org-account }}
       dockerhub-account: ${{ needs.extract-tag.outputs.org-account }}
