@@ -33,7 +33,7 @@ RUN \
   install_app_icon.sh "$APP_ICON_URL" && \
   wget -P /tmp/ https://github.com/DevilXD/TwitchDropsMiner/releases/download/dev-build/Twitch.Drops.Miner.Linux.PyInstaller-x86_64.zip && \
   mkdir /app && \
-  unzip -p /tmp/Twitch.Drops.Miner.Linux.PyInstaller.zip "Twitch Drops Miner/Twitch Drops Miner (by DevilXD)" > /app/TwitchDropsMiner && \
+  unzip -p /tmp/Twitch.Drops.Miner.Linux.PyInstaller-x86_64.zip "Twitch Drops Miner/Twitch Drops Miner (by DevilXD)" > /app/TwitchDropsMiner && \
   chmod +x /app/TwitchDropsMiner && \
   echo "*** Link folders and files ***" && \
   mkdir /config && \
